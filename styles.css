@@ -5,16 +5,7 @@
     --Dark-purple: hsl(292, 42%, 14%);
 }
 
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
-}
-
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
-}
-
-main {
+body {
     background-color: var(--Light-pink)
 }
 
@@ -38,11 +29,20 @@ fieldset {
     text-align: left;
 }
 
-.dropBtn {
+.button {
     background-color: var(--Grayish-purple);
     border-radius: 1rem;
 }
 
 .hidden {
     display: none;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
 }

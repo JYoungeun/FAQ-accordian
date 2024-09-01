@@ -32,6 +32,7 @@ fieldset {
 .button {
     background-color: var(--Grayish-purple);
     border-radius: 1rem;
+    float: right;
 }
 
 .hidden {

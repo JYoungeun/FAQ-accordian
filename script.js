@@ -7,7 +7,18 @@ const hiddenTextTwo = document.getElementById('hidden2');
 const hiddenTextThree = document.getElementById('hidden3');
 const hiddenTextFour = document.getElementById('hidden4');
 
-const displayText = buttonOne.addEventListener('click', () => {
-    hiddenTextOne.display;
-    displayText(hiddenTextOne);
+dropBtn1.addEventListener('click', () => {
+  hiddenTextOne.classList.toggle('hidden');
 });
+
+dropBtn2.addEventListener('click', () => {
+    hiddenTextTwo.classList.toggle('hidden');
+});
+
+dropBtn3.addEventListener('click', () => {
+    hiddenTextThree.classList.toggle('hidden');
+});
+
+dropBtn4.addEventListener('click', () => {
+    hiddenTextFour.classList.toggle('hidden');
+  });

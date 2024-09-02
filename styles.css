@@ -35,6 +35,10 @@ fieldset {
     float: right;
 }
 
+.dropdown {
+    color: var(--Grayish-purple);
+}
+
 .hidden {
     display: none;
 }

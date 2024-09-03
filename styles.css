@@ -19,8 +19,40 @@ body {
     height: 10rem;
 }
 
+.star {
+    position: relative;
+    width: 50px; /* Size of the star */
+    height: 50px; /* Size of the star */
+  }
+  
+  .star::before, .star::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 25px;
+    border-color: transparent transparent transparent rgb(170, 18, 220); /* Adjust color here */
+  }
+  
+  .star::before {
+    transform: rotate(45deg);
+    top: 0;
+    left: 0;
+  }
+  
+  .star::after {
+    transform: rotate(-45deg);
+    bottom: 0;
+    right: 0;
+  }
+
 h1 {
     text-align: left;
+    color: var(--Dark-purple);
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: Work Sans;
 }
 
 #faqsheet {
@@ -39,19 +71,22 @@ fieldset {
 }
 
 label {
-    font-weight: 500;
-    font-size: 0.8rem;
+    font-weight: 600;
+    font-size: 0.75rem;
+    color: var(--Dark-purple);
 }
 
 .button {
-    background-color: var(--Grayish-purple);
-    border-radius: 1rem;
+    background-color: rgb(170, 18, 220);
+    color: var(--White);
     float: right;
+    border: none;
+    border-radius: 0.5rem;
 }
 
 .dropdown {
     padding-top: 0.8rem;
-    font-size: 0.8rem;
+    font-size: 0.96rem;
     color: var(--Grayish-purple);
 }
 
@@ -62,6 +97,7 @@ label {
 .attribution { 
     font-size: 11px; 
     text-align: center; 
+    transform: translateY(20rem)
 }
 
 .attribution a { 

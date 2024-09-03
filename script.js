@@ -21,4 +21,4 @@ dropBtn3.addEventListener('click', () => {
 
 dropBtn4.addEventListener('click', () => {
     hiddenTextFour.classList.toggle('hidden');
-  });
+});

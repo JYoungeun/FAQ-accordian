@@ -1,3 +1,7 @@
+* {
+    font-family: work-sans, sans-serif;
+}
+
 :root {
     --White: hsl(0, 0%, 100%);
     --Light-pink: hsl(275, 100%, 97%);
@@ -15,18 +19,28 @@ body {
     height: 10rem;
 }
 
+h1 {
+    text-align: left;
+}
+
 #faqsheet {
-    width: 400px;
+    max-width: 22.5rem;
     text-align: center;
     margin: 0 auto;
     transform: translateY(-20%);
     background-color: var(--White);
     border-radius: 0.5rem;
+    padding: 0.5rem;
 }
 
 fieldset {
     border: none;
     text-align: left;
+}
+
+label {
+    font-weight: 500;
+    font-size: 0.8rem;
 }
 
 .button {
@@ -36,6 +50,8 @@ fieldset {
 }
 
 .dropdown {
+    padding-top: 0.5rem;
+    font-size: 0.8rem;
     color: var(--Grayish-purple);
 }
 

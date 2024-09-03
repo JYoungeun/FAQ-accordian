@@ -6,6 +6,7 @@ const hiddenTextOne = document.getElementById('hidden1');
 const hiddenTextTwo = document.getElementById('hidden2');
 const hiddenTextThree = document.getElementById('hidden3');
 const hiddenTextFour = document.getElementById('hidden4');
+const button = document.getElementsByClassName('button');
 
 dropBtn1.addEventListener('click', () => {
   hiddenTextOne.classList.toggle('hidden');
@@ -21,4 +22,14 @@ dropBtn3.addEventListener('click', () => {
 
 dropBtn4.addEventListener('click', () => {
     hiddenTextFour.classList.toggle('hidden');
+});
+
+const changeLabel = button => {
+  button.textContent = button.textContent === '+' ? '-' : '+';
+}
+
+Array.from(buttons).forEach(button => {
+  button.addEventListener('click', () => {
+    changeLabel(button);
+  });
 });

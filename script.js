@@ -28,8 +28,6 @@ const changeLabel = button => {
   button.textContent = button.textContent === '+' ? '-' : '+';
 }
 
-Array.from(buttons).forEach(button => {
-  button.addEventListener('click', () => {
-    changeLabel(button);
-  });
+button.addEventListener('click', () => {
+  changeLabel(button);
 });

@@ -1,5 +1,5 @@
 * {
-    font-family: work-sans, sans-serif;
+    font-family: Work-Sans;
 }
 
 :root {
@@ -14,45 +14,22 @@ body {
 }
 
 #banner {
-    background-color: var(--Dark-purple);
     width: 100%;
-    height: 10rem;
+    height: 100%;
 }
-
-.star {
-    position: relative;
-    width: 50px; /* Size of the star */
-    height: 50px; /* Size of the star */
-  }
-  
-  .star::before, .star::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 30px 25px;
-    border-color: transparent transparent transparent rgb(170, 18, 220); /* Adjust color here */
-  }
-  
-  .star::before {
-    transform: rotate(45deg);
-    top: 0;
-    left: 0;
-  }
-  
-  .star::after {
-    transform: rotate(-45deg);
-    bottom: 0;
-    right: 0;
-  }
 
 h1 {
     text-align: left;
     color: var(--Dark-purple);
     font-weight: 700;
     font-size: 2rem;
-    font-family: Work Sans;
+}
+
+#star {
+    float: left;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    width: 1.3rem;
 }
 
 #faqsheet {
@@ -77,11 +54,9 @@ label {
 }
 
 .button {
-    background-color: rgb(170, 18, 220);
-    color: var(--White);
     float: right;
-    border: none;
-    border-radius: 0.5rem;
+    width: 1.5rem;
+    
 }
 
 .dropdown {
